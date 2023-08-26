@@ -1,55 +1,64 @@
-var age = 27; 
-var isStudent = false; 
-var favoriteColors = ['blue', 'green', 'purple'];
-//
+var age = 25; 
+var isStudent = true; 
+var favoriteColors = ['red', 'green', 'blue'];
 
-//
-var myString = 'This is a string with both single and double quotes: "Hello" and \'World\'';
-console.log(myString);
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//
-var  age = 27; 
-var isStudent = false; 
+var x="this is my name :" ;
+var y=' Oumaima Elkadmiri';
+console.log(x); 
+console.log(y);
 
-var name = "medfk"; 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+var  age = 25; 
+var isStudent = true; 
+var name = " Elkadmiri oumaima"; 
 var studentStatus = isStudent ? "I am a student." : "I am not a student.";
-var sentence = "My name is " + medfk + ", I am " + 27 + " years old, and " + studentStatus;
+var message = "My name is : " + name + ", I am " + age + " years old.  " + studentStatus;
+console.log(message);
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-console.log(sentence);
-//
-var myFavoriteAnimal = "cat";
-var myFavoriteColor = "blue";
-
-
-var userFavoriteAnimal = prompt("What's your favorite animal?");
-var userFavoriteColor = prompt("What's your favorite color?");
-
-
-if (userFavoriteAnimal.toLowerCase() === myFavoriteAnimal && userFavoriteColor.toLowerCase() === myFavoriteColor) {
-    console.log("Wow, we have the same favorite animal and color!");
+// users
+var userFavoriteAnimal = prompt("Quel est votre animal préféré ?");
+var userFavoriteColor = prompt("Quelle est votre couleur préférée ?");
+//Me
+var yourFavoriteAnimal = "chien";
+var yourFavoriteColor = "bleu";
+// verification
+if (userFavoriteAnimal.toLowerCase() === yourFavoriteAnimal && userFavoriteColor.toLowerCase() === yourFavoriteColor) {
+    console.log("Nous avons les mêmes préférences !");
 } else {
-    console.log("It looks like our favorite animal and/or color is different.");
+    console.log("Nos préférences sont différentes.");
 }
-//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-var userInput = parseFloat(prompt("Enter a number:"));
+// Prompt the user for a number
+var Number=parseFloat(prompt("Enter a Number") ;
 
+// Check if the number is positive, negative, or zero
+if (Number > 0){
+console.log("Number is positive");
+}
+ else if (Number < 0){
+    console.log("Number is negative");
+    }
+else{
+    console.log("Number is zero");
+}
 
-if (userInput > 0) {
-    console.log("The number is positive.");
-} else if (userInput < 0) {
-    console.log("The number is negative.");
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Prompt the user for a value
+var userValue = prompt("Enter a value:");
+//me for value
+var meValue = 1000;
+// Check if the value is truthy or falsy
+if (userValue.toLowerCase() == meValue) {
+    console.log("The entered value is truthy.");
 } else {
-    console.log("The number is zero.");
+    console.log("The entered value is falsy.");
 }
 
-//
-
-var userInput = prompt("Enter a value:");
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-if (userInput) {
-    console.log("The value is truthy.");
-} else {
-    console.log("The value is falsy.");
-}
